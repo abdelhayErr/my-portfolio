@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="myImg" src="./assets/images/abdo_enhanced.jpeg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Abdelhay Errosafi</h1>
+
+          <p class="title">full stack developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:abdelkarim.hujji@gmail.com" class="contact-link">abdelhayeerrosafi@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+90 5428752570</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">JULLY 23, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Nicosie, Cyprus</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item" id="about">
+            <button class="navbar-link  active"  data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi there! 👋 I'm Abdelhay Errosafi, a passionate web developer 
+            dedicated to crafting elegant and functional websites.
+            Skilled in database management with expertise in MySQL
+            and SQL, I specialize in designing and optimizing databases
+            to power diverse applications. Proficient in both front-end and
+            back-end development, I leverage JavaScript, HTML, CSS, Bootstrap, 
+            jQuery, and AJAX to create dynamic, responsive interfaces.
+          </p>
+
+          <p>
+            On the server side, I excel in PHP, Node.js, and Express, crafting 
+            robust applications that seamlessly interact with databases. From 
+            designing efficient schemas to writing complex queries, I ensure optimal 
+            performance and scalability for every project.
+          </p>
+
+          <p>
+            With a focus on delivering reliable, scalable solutions 
+            tailored to clients' needs, I bring a passion for innovation 
+            and problem-solving to every development endeavor.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+
+        </div>
+        <div class="container-skills">
+          <p>My Skills</p>
+          <p style="color: rgb(235, 235, 235); margin-bottom: 10px; font-size: 19px;">Front-end</p>
+          <div class="skills" style="margin-bottom: 30px;">
+            <div class="eachSkill">HTML</div>
+            <div class="eachSkill">CSS</div>
+            <div class="eachSkill">JS</div>
+            <div class="eachSkill">BOOSTRAP</div>
+            <div class="eachSkill">AJAX</div>
+            <div class="eachSkill">JQUERY</div>
+            <div class="eachSkill">REACT</div>
+            <div class="eachSkill">REACT NATIVE</div> 
+          </div>
+          <p style="color: rgb(235, 235, 235); margin-bottom: 10px; font-size: 19px;">Back-end</p>
+          <div class="skills" style="margin-bottom: 30px;">
+            <div class="eachSkill">NODE JS</div>
+            <div class="eachSkill">EXPRESS</div>
+            <div class="eachSkill">PHP</div>
+            <div class="eachSkill">JAVA</div> 
+            <div class="eachSkill">C#</div>  
+          </div>
+          <p style="color: rgb(235, 235, 235); margin-bottom: 10px; font-size: 19px;">Databases</p>
+          <div class="skills" style="margin-bottom: 30px;">
+            <div class="eachSkill">MySQL</div>
+            <div class="eachSkill">POSTGRADE</div>
+            <div class="eachSkill">MONGODB</div>
+            <div class="eachSkill">SQL</div>
+          </div>
+          <p style="color: rgb(235, 235, 235); margin-bottom: 10px; font-size: 19px;">Other langauges</p>
+          <div class="skills" style="margin-bottom: 30px;">
+            <div class="eachSkill">C</div>
+            <div class="eachSkill">CPP</div>
+            <div class="eachSkill">SHELL SCRIPT</div>         
+           </div>
+        </div>
+  
+      </article>
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cyprus International University</h4>
+
+              <span>2023 — now</span>
+
+              <p class="timeline-text">
+                Currently, I'm enrolled at Cyprus International University, where 
+                I'm continuing to expand my 
+                skills and knowledge in Software Engineering.
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ISMANTIC Tangier</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                At Ismantic, I deepened my understanding of full-stack developer. I earned spiialized technician diplomat from OFPPT, both online and offline, 
+                further enhancing my expertise in the field.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SysBase</h4>
+
+              <span>2022 - 2023</span>
+
+              <p class="timeline-text">
+                As a Software developer, I've collaborated with Club SysBase
+                 Tangier to create and maintain their softwares. My role involves designing 
+                 and developing user-friendly interfaces to promote the resort's services 
+                 and developed the back-end, ensuring an engaging online experience for visitors
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mailbox Tangier</h4>
+
+              <span>2022 - 2023</span>
+
+              <p class="timeline-text">
+                As a freelance web developer and digitale Marketer, 
+                I've been actively involved in the Mailbox website project.
+                My responsibilities include designing and implementing creative
+                solutions to enhance user experience and manage the digital marketing 
+                side including the social media and email marketing management.
+              </p>
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+
+      
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select style="display: none;">
+
+              <!-- <div class="select-value" data-selecct-value>Select category</div> -->
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="Full Stack">
+              <span>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/wiatingCoder.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Waiting Coder</h3>
+
+                <p class="project-category">Full Stack</p>
+
+              </span>
+              <div class="containerDetails">
+                <div class="container-image">
+                  <img src="assets/images/icons8-close-384.png" alt="" onclick="removeClassDeatils()">
+                </div>
+                <div class="containerTitle">
+                  <h3 class="myTitles">Waiting Coder</h3>
+                </div>
+                <div class="container-all">
+                  <div class="container-desc">
+                    <p class="desc">I made a platform where students can find projects to work on, 
+                      learn new languages, and track their progress. There's also a part for teachers 
+                      to manage students easily. It shows I'm good at making websites and organizing
+                      information for learning.
+                    </p>
+                    <br/>
+                    <p class="desc">
+                      To access the student platform, use the following credentials:<br/>
+                      Link: click <a target="_blank" href="http://62.169.27.85:8038/" style="display: inline; color: rgb(73, 73, 197); text-decoration: underline;">here</a><br/>
+                      Username: <span class="myspan" style="display: inline; color: rgb(73, 73, 197);">student</span><br/>
+                      Password: <span class="myspan" style="display: inline; color: rgb(73, 73, 197);">student</span><br/>
+                      To access the admin platform, use the following credentials:
+                      Link: click <a target="_blank" href="http://62.169.27.85:8038/Admin" style="display: inline; color: rgb(73, 73, 197); text-decoration: underline;">here</a><br/>
+                      Username: <span class="myspan" style="display: inline; color: rgb(73, 73, 197);">admin</span><br/>
+                      Password: <span class="myspan" style="display: inline; color: rgb(73, 73, 197);">admin</span><br/>
+                    </p>
+                  </div>
+                  <div class="container-badges">
+                    <!-- <img class="myImg" src="assets/images/badgeHtml.png" alt=""> -->
+                    <img class="myImg" src="assets/images/badgeCss.png" alt="">
+                    <img class="myImg" src="assets/images/badgeJs.png" alt="">
+                    <img class="myImg" src="assets/images/badgeNodeJs.png" alt="">
+                    <img class="myImg" src="assets/images/badgeSass.png" alt="">
+                    <!-- <img class="myImg" src="assets/images/badgePhp.png" style="width: 50px; height: 35px;" alt=""> -->
+                    <img class="myImg" src="assets/images/badgeMysgl.png" alt="">
+                    <img class="myImg" src="assets/images/sql.png" alt="">
+                    <img class="myImg" src="assets/images/badgeExpressJs.png" alt="">
+                    <img class="myImg" src="assets/images/badgeReact.png" style="height: 50px;" alt="">
+                  </div>
+                  <div class="container-links">
+                    <div class="link-website">
+                      <a href="https://github.com/abdelhayErr/waiting-coder.git" target="_blank" rel="noopener noreferrer"><button>Github <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                    <div class="link-website">
+                      <a href="http://62.169.27.85:8038/" target="_blank" rel="noopener noreferrer"><button>Web Site <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <span>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="myImg" src="./assets/images/ecomerce.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ecomerce</h3>
+
+                <p class="project-category">Full Stack</p>
+
+              </span>
+              <div class="containerDetails">
+                <div class="container-image">
+                  <img class="myImg" src="assets/images/icons8-close-384.png" alt="" onclick="removeClassDeatils()">
+                </div>
+                <div class="containerTitle">
+                  <h3 class="myTitles">Ecomerce</h3>
+                </div>
+                <div class="container-all">
+                  <div class="container-desc">
+                    <p class="desc">
+                      I developed an e-commerce platform using PHP, HTML, CSS, and jQuery, providing
+                       a seamless shopping experience for users. Leveraging PHP for server-side 
+                       functionality and integrating HTML, CSS, and jQuery for dynamic front-end 
+                       elements, the platform offers a user-friendly interface and efficient 
+                       transaction processing. With its robust features and responsive design, 
+                       this project demonstrates my proficiency in web development and e-commerce 
+                       solutions.
+                    </p>
+                    <br/>
+                    <p class="desc">
+                      
+                    </p>
+                  </div>
+                  <div class="container-badges">
+                    <img class="myImg" src="assets/images/badgeHtml.png"  alt="">
+                    <img class="myImg" src="assets/images/badgeCss.png" alt="">
+                    <img class="myImg" src="assets/images/badgeJs.png" alt="">
+                    <img class="myImg" src="assets/images/badgePhp.png" style="width: 50px; height: 35px;" alt="">
+                    <img class="myImg" src="assets/images/badgeMysgl.png" alt="">
+                    <img class="myImg" src="assets/images/sql.png" alt="">
+                  </div>
+                  <div class="container-links">
+                    <div class="link-website">
+                      <a href="https://github.com/abdelhayErr/e-comerce.git" target="_blank" rel="noopener noreferrer"><button>Github <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <span>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="myImg" src="./assets/images/iptv.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Iptv</h3>
+
+                <p class="project-category">Front-end</p>
+
+              </span>
+              <div class="containerDetails">
+                <div class="container-image">
+                  <img class="myImg" src="assets/images/icons8-close-384.png" alt="" onclick="removeClassDeatils()">
+                </div>
+                <div class="containerTitle">
+                  <h3 class="myTitles">Iptv</h3>
+                </div>
+                <div class="container-all">
+                  <div class="container-desc">
+                    <p class="desc">
+                        I created a personalized IPTV website using HTML, CSS, and JavaScript, offering 
+                        a platform for selling IPTV services. By leveraging HTML for structure, CSS for styling,
+                        and JavaScript for interactivity, the website provides a seamless browsing experience 
+                        for users interested in IPTV subscriptions. With a focus on intuitive design and 
+                        user engagement, this project showcases my skills in web development and 
+                        e-commerce solutions.
+                    </p>
+                    <br/>
+                  </div>
+                  <div class="container-badges">
+                    <img class="myImg" src="assets/images/badgeHtml.png" alt="">
+                    <img class="myImg" src="assets/images/badgeCss.png" alt="">
+                    <img class="myImg" src="assets/images/badgeJs.png" alt="">
+                  </div>
+                  <div class="container-links">
+                    <div class="link-website">
+                      <a href="https://github.com/abdelhayErr/newiptvs.git" target="_blank" rel="noopener noreferrer"><button>Github <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                    <div class="link-website">
+                      <a href="https://abdelhayerr.github.io/newiptvs/" target="_blank" rel="noopener noreferrer"><button>Web Site <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <span>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="myImg" src="./assets/images/cafeNora.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Caffe Nora</h3>
+
+                <p class="project-category">Front-end</p>
+
+              </span>
+              <div class="containerDetails">
+                <div class="container-image">
+                  <img class="myImg" src="assets/images/icons8-close-384.png" alt="" onclick="removeClassDeatils()">
+                </div>
+                <div class="containerTitle">
+                  <h3 class="myTitles">Caffe Nora</h3>
+                </div>
+                <div class="container-all">
+                  <div class="container-desc">
+                    <p class="desc">Presenting a real-life project tailored for a customer, 
+                      Cafe Nora's website showcases my ability to translate client needs into 
+                      a dynamic online presence. Crafted with HTML, CSS, Bootstrap, and JavaScript,
+                       this project underscores my dedication to delivering effective digital solutions 
+                       for businesses 
+                    </p>
+                    <br/>
+                  </div>
+                  <div class="container-badges">
+                    <img class="myImg" src="assets/images/badgeHtml.png" alt="">
+                    <img class="myImg" src="assets/images/badgeCss.png" alt="">
+                    <img class="myImg" src="assets/images/badgeJs.png" alt="">
+                    <img class="myImg" src="assets/images/badgeBoostrp.png" alt="">
+                  </div>
+                  <div class="container-links">
+                    <div class="link-website">
+                      <a href="https://github.com/abdelhayErr/poject_cafee_nora.git" target="_blank" rel="noopener noreferrer"><button>Github <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                    <div class="link-website">
+                      <a href="https://abdelhayerr.github.io/poject_cafee_nora/" target="_blank" rel="noopener noreferrer"><button>Web Site <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <span>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="myImg" src="./assets/images/quizGame.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Quiz Game</h3>
+
+                <p class="project-category">Full Stack</p>
+
+              </span>
+              <div class="containerDetails">
+                <div class="container-image">
+                  <img class="myImg" src="assets/images/icons8-close-384.png" alt="" onclick="removeClassDeatils()">
+                </div>
+                <div class="containerTitle">
+                  <h3 class="myTitles">Quiz Game</h3>
+                </div>
+                <div class="container-all">
+                  <div class="container-desc">
+                    <p class="desc">Celebrate your knowledge of cars, actors,
+                       and history with an interactive quiz game meticulously 
+                       crafted using PHP, HTML, CSS, and JavaScript. Dive into
+                        the excitement of guessing and learning, showcasing my
+                         dedication to creating dynamic and immersive web 
+                         experiences 
+                    </p>
+                    <br/>
+                  </div>
+                  <div class="container-badges">
+                    <img class="myImg" src="assets/images/badgeHtml.png" alt="">
+                    <img class="myImg" src="assets/images/badgeCss.png" alt="">
+                    <img class="myImg" src="assets/images/badgeJs.png" alt="">
+                    <img class="myImg" src="assets/images/badgePhp.png" style="width: 50px; height: 35px;" alt="">
+                    <img class="myImg" src="assets/images/badgeMysgl.png" alt="">
+                    <img class="myImg" src="assets/images/sql.png" alt="">
+                  </div>
+                  <div class="container-links">
+                    <div class="link-website">
+                      <a href="https://github.com/abdelhayErr/quiz-game.git" target="_blank" rel="noopener noreferrer"><button>Github <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <span>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="myImg" src="./assets/images/7ala9.jpg" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">7ala9</h3>
+
+                <p class="project-category">Front-end</p>
+
+              </span>
+              <div class="containerDetails">
+                <div class="container-image">
+                  <img class="myImg" src="assets/images/icons8-close-384.png" alt="" onclick="removeClassDeatils()">
+                </div>
+                <div class="containerTitle">
+                  <h3 class="myTitles">7ala9</h3>
+                </div>
+                <div class="container-all">
+                  <div class="container-desc">
+                    <p class="desc">I'm excited to introduce the future of barber services
+                       with my upcoming mobile app. While it's still in development, 
+                       take a peek at the sleek landing page I've created. It's designed 
+                       to captivate investors and showcase the convenience and style of what's 
+                       to come. Keep an eye out for updates!
+                    </p>
+                    <br/>
+                  </div>
+                  <div class="container-badges">
+                    <img class="myImg" src="assets/images/badgeHtml.png" alt="">
+                    <img class="myImg" src="assets/images/badgeCss.png" alt="">
+                    <img class="myImg" src="assets/images/badgeJs.png" alt="">
+                  </div>
+                  <div class="container-links">
+                    <div class="link-website">
+                      <a href="https://github.com/abdelhayErr/7ala9.git" target="_blank" rel="noopener noreferrer"><button>Github <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                    <div class="link-website">
+                      <a href="https://abdelhayerr.github.io/7ala9/" target="_blank" rel="noopener noreferrer"><button>Web Site <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <span>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="myImg" src="./assets/images/fitness.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gym</h3>
+
+                <p class="project-category">Front-end</p>
+
+              </span>
+              <div class="containerDetails">
+                <div class="container-image">
+                  <img class="myImg" src="assets/images/icons8-close-384.png" alt="" onclick="removeClassDeatils()">
+                </div>
+                <div class="containerTitle">
+                  <h3 class="myTitles">Gym</h3>
+                </div>
+                <div class="container-all">
+                  <div class="container-desc">
+                    <p class="desc">I developed a sleek website for a local gym club utilizing 
+                      HTML, CSS, and JavaScript. The platform offers seamless access to club 
+                      schedules, facilitating members' workout planning. Leveraging responsive design, 
+                      it ensures optimal viewing on various devices.
+                    </p>
+                    <br/>
+                  </div>
+                  <div class="container-badges">
+                    <img class="myImg" src="assets/images/badgeHtml.png" alt="">
+                    <img class="myImg" src="assets/images/badgeCss.png" alt="">
+                    <img class="myImg" src="assets/images/badgeJs.png" alt="">
+                    <img class="myImg" src="assets/images/badgeBoostrp.png" alt="">
+                  </div>
+                  <div class="container-links">
+                    <div class="link-website">
+                      <a href="https://github.com/abdelhayErr/gym_webSite.git" target="_blank" rel="noopener noreferrer"><button>Github <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                    <div class="link-website">
+                      <a href="https://abdelhayerr.github.io/gym_webSite/" target="_blank" rel="noopener noreferrer"><button>Web Site <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <span>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="myImg" src="./assets/images/barber.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Barber</h3>
+
+                <p class="project-category">Front-end</p>
+
+              </span>
+
+              <div class="containerDetails">
+                <div class="container-image">
+                  <img class="myImg" src="assets/images/icons8-close-384.png" alt="" onclick="removeClassDeatils()">
+                </div>
+                <div class="containerTitle">
+                  <h3 class="myTitles">Barber</h3>
+                </div>
+                <div class="container-all">
+                  <div class="container-desc">
+                    <p class="desc">I developed a website for a barber utilizing 
+                      HTML, CSS, JavaScript, and Bootstrap. The website presents 
+                      the barber's services, various haircut styles, and the 
+                      atmosphere of the barbershop. While currently functioning 
+                      as a digital portfolio, future plans include incorporating 
+                      appointment scheduling for added convenience.
+                    </p>
+                    <br/>
+                  </div>
+                  <div class="container-badges">
+                    <img class="myImg" src="assets/images/badgeHtml.png" alt="">
+                    <img class="myImg" src="assets/images/badgeCss.png" alt="">
+                    <img class="myImg" src="assets/images/badgeJs.png" alt="">
+                    <img class="myImg" src="assets/images/badgeBoostrp.png" alt="">
+                  </div>
+                  <div class="container-links">
+                    <div class="link-website">
+                      <a href="https://github.com/abdelhayErr/barber.git" target="_blank" rel="noopener noreferrer"><button>Github <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                    <div class="link-website">
+                      <a href="https://abdelhayerr.github.io/barber/" target="_blank" rel="noopener noreferrer"><button>Web Site <img class="myImg" src="assets/images/iconeLink.svg"></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <a  href="https://github.com/abdelhayErr"  target="_blank" class="project-item  active" data-filter-item data-category="applications">
+              <span>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="myImg" src="./assets/images/github.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Github</h3>
+
+                <p class="project-category">Link</p>
+
+              </span>
+            </a>
+
+          </ul>
+          
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1630.162303754827!2d33.33345320947498!3d35.198382589910615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2s!4v1740952898108!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formspree.io/f/mvoeyzpa" method="post" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
